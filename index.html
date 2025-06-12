@@ -69,6 +69,10 @@
       --spacing: 0.60rem;
       --serif: 'Cormorant Garamond', serif;
       --sans: 'Source Sans Pro', sans-serif;
+      --base-size: 1rem;
+      --h1-size: 3.5rem;
+      --h2-size: 2rem;
+      --h3-size: 1.5rem;
     }
 
     * {
@@ -81,8 +85,8 @@
       font-family: var(--sans);
       background: var(--bg);
       color: var(--text);
-      line-height: 1.75;
-      font-size: 1.1rem;
+      line-height: 1.6;
+      font-size: var(--base-size);
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -100,20 +104,21 @@
 
     h1 {
       font-family: var(--serif);
-      font-size: 4.5rem;
+      font-size: var(--h1-size);
       font-weight: 700;
       margin-bottom: 1rem;
       color: var(--accent);
-      line-height: 1.1;
+      line-height: 1.2;
       letter-spacing: -0.02em;
     }
 
     h2 {
       font-family: var(--serif);
-      font-size: 2.2rem;
+      font-size: var(--h2-size);
       color: var(--accent);
       margin-bottom: 1.5rem;
       font-weight: 500;
+      line-height: 1.3;
       letter-spacing: -0.01em;
     }
 
@@ -157,22 +162,24 @@
     p {
       margin-bottom: 1.5rem;
       color: var(--text);
-      font-size: 1.1rem;
+      font-size: var(--base-size);
       font-weight: 400;
+      line-height: 1.6;
       letter-spacing: 0.01em;
     }
 
     ul {
       list-style: none;
-      margin: 1.5rem 0;
+      margin: 1.2rem 0;
     }
 
     li {
-      margin-bottom: 1rem;
-      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+      padding-left: 1.2rem;
       position: relative;
-      font-size: 1.1rem;
+      font-size: var(--base-size);
       font-weight: 400;
+      line-height: 1.6;
       letter-spacing: 0.01em;
     }
 
@@ -181,7 +188,8 @@
       position: absolute;
       left: 0;
       color: var(--accent);
-      font-size: 1.2em;
+      font-size: 1.1em;
+      line-height: 1.6;
     }
 
     .highlight {
@@ -229,18 +237,10 @@
     @media (max-width: 768px) {
       :root {
         --spacing: 1rem;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      h2 {
-        font-size: 1.8rem;
-      }
-
-      p {
-        font-size: 1rem;
+        --base-size: 0.95rem;
+        --h1-size: 2.5rem;
+        --h2-size: 1.8rem;
+        --h3-size: 1.3rem;
       }
 
       .module {
